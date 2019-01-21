@@ -1,0 +1,22 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title> {{ block "title" . }}
+                {{ end }}
+        </title>
+    </head>
+
+    <body>
+        {{ block "main" . }}
+            This is the baseof main block. 
+        {{end}}
+
+        <br>
+        
+        {{ block "footer" . }}
+            This is the baseof footer. 
+        {{end}}
+    </body>
+
+</html>
