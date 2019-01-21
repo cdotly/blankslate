@@ -8,3 +8,6 @@ languages:
     weight: 1
 MetaDataFormat: "yaml"
 theme: "slated"
+taxonomies:
+  category: categories
+  tag: tags
