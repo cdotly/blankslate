@@ -4,9 +4,24 @@
 
 {{ define "main" }}
     <article>
-        <h1>{{ .Title }}</h1>
+        <h1 style="color:{{ .Params.color }};">Single Template</h1>
+
+        <h2>{{ .Title }}</h2>
         <h4>{{ .Date }}</h4>
+        {{ .Params.myVar }}
+
         {{ .Content }}
+
+        {{ $var1 := "dog" }}
+        {{ $var2 := "cat" }}
+        
+        {{ if eq $var1 $var2 }}   
+          True, dogs and cats are equal
+        {{ else }}
+          False, dogs and cats are not equal
+        {{ end }}
+
+        
     </article>
     
 {{ end }}

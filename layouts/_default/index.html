@@ -8,11 +8,11 @@
 
     <body>
         {{.Content}}
-        {{ range .Pages }}
+        {{ range .Site.Pages }}
         <ul>
             <li><a href="{{.URL}}"></a>{{.Title}}</li>
         </ul>
-        {{end}}
+        {{ end }}
     </body>
 
 </html>
