@@ -5,3 +5,5 @@ draft: true
 color: "orange"
 ---
 This is a.md
+
+{{< myshortcode color="blue" >}}
